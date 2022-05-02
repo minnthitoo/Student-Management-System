@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" stylesheets="@../styles/teacher.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mto.controllers.AccountsController">
+   <children>
+      <Pane layoutY="-4.0" prefHeight="325.0" prefWidth="1607.0" styleClass="box">
+         <children>
+            <JFXButton contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" onAction="#goHome" prefHeight="48.0" prefWidth="46.0" text=" ">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARROW_CIRCLE_LEFT" size="60" />
+               </graphic>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="FLAG_CHECKERED" layoutX="107.0" layoutY="141.0" size="94px" />
+            <Label layoutX="239.0" layoutY="61.0" text="School Office" textFill="WHITE">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <Label layoutX="239.0" layoutY="144.0" text="Enjoy" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="1412.0" layoutY="90.0" text="Setting" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1328.0" layoutY="321.0" prefHeight="591.0" prefWidth="279.0" styleClass="box">
+         <children>
+            <JFXButton layoutX="39.0" layoutY="84.0" onAction="#show" prefHeight="45.0" prefWidth="202.0" styleClass="b" text="Show" textFill="WHITE" />
+            <JFXButton layoutX="39.0" layoutY="180.0" onAction="#edit" prefHeight="45.0" prefWidth="202.0" styleClass="b" text="Edit" textFill="WHITE" />
+            <JFXButton layoutX="39.0" layoutY="273.0" onAction="#delete" prefHeight="45.0" prefWidth="202.0" styleClass="b" text="Delete" textFill="WHITE" />
+         </children>
+      </Pane>
+      <TableView fx:id="accounts" layoutX="180.0" layoutY="406.0" prefHeight="421.0" prefWidth="979.0">
+        <columns>
+          <TableColumn fx:id="id" maxWidth="129.99996948242188" minWidth="129.99996948242188" prefWidth="129.99996948242188" text="ID" />
+            <TableColumn fx:id="email" maxWidth="415.0" minWidth="415.0" prefWidth="415.0" text="E-Mail" />
+            <TableColumn fx:id="password" maxWidth="433.0" minWidth="433.0" prefWidth="433.0" text="Password" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

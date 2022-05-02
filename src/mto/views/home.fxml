@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" stylesheets="@../styles/home.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mto.controllers.HomeController">
+   <children>
+      <Pane layoutX="-6.0" prefHeight="292.0" prefWidth="1624.0" styleClass="pane">
+         <children>
+            <Label layoutX="237.0" layoutY="53.0" text="School Office" textFill="#eeeeee">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <Label layoutX="237.0" layoutY="134.0" text="Enjoy" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="FLAG_CHECKERED" layoutX="80.0" layoutY="155.0" size="100px" />
+            <Label layoutX="1472.0" layoutY="77.0" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <ImageView fitHeight="610.0" fitWidth="1618.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true" />
+      <GridPane hgap="10.0" layoutX="456.0" layoutY="351.0" prefHeight="482.0" prefWidth="695.0" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <JFXButton contentDisplay="TOP" layoutX="36.0" layoutY="17.0" onAction="#goTeacher" prefHeight="121.0" prefWidth="271.0" text="Teachers" textFill="#0f2a3f">
+                     <graphic>
+                        <FontAwesomeIconView fill="#0f2a3f" glyphName="ADDRESS_CARD_ALT" size="64px" />
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <JFXButton contentDisplay="TOP" layoutX="36.0" layoutY="17.0" onAction="#goStudent" prefHeight="121.0" prefWidth="271.0" text="Students" textFill="#0f2a3f">
+                     <graphic>
+                        <FontAwesomeIconView fill="#0f2a3f" glyphName="GROUP" size="64px" />
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <JFXButton contentDisplay="TOP" layoutX="36.0" layoutY="17.0" onAction="#goClass" prefHeight="121.0" prefWidth="271.0" text="Classes" textFill="#0f2a3f">
+                     <graphic>
+                        <FontAwesomeIconView fill="#0f2a3f" glyphName="INDENT" size="64px" />
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <JFXButton contentDisplay="TOP" layoutX="36.0" layoutY="17.0" onAction="#goTimetable" prefHeight="121.0" prefWidth="271.0" text="Timetables" textFill="#0f2a3f">
+                     <graphic>
+                        <FontAwesomeIconView fill="#0f2a3f" glyphName="CALENDAR" size="64px" />
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <JFXButton contentDisplay="TOP" layoutX="36.0" layoutY="17.0" onAction="#goSetting" prefHeight="121.0" prefWidth="271.0" text="Accounts" textFill="#0f2a3f">
+                     <graphic>
+                        <FontAwesomeIconView fill="#0f2a3f" glyphName="ADDRESS_CARD" size="64px" />
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <JFXButton contentDisplay="TOP" layoutX="36.0" layoutY="17.0" onAction="#goLogout" prefHeight="121.0" prefWidth="271.0" text="Logout" textFill="#0f2a3f">
+                     <graphic>
+                        <FontAwesomeIconView fill="#0f2a3f" glyphName="SIGN_OUT" size="64px" />
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

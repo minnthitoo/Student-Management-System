@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" stylesheets="@../styles/teacher.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mto.controllers.TeacherController">
+   <children>
+      <Pane layoutY="-4.0" prefHeight="325.0" prefWidth="1607.0" styleClass="box">
+         <children>
+            <JFXButton contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" onAction="#goPrevious" prefHeight="48.0" prefWidth="46.0" text=" ">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARROW_CIRCLE_LEFT" size="60" />
+               </graphic>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="FLAG_CHECKERED" layoutX="107.0" layoutY="141.0" size="94px" />
+            <Label layoutX="239.0" layoutY="61.0" text="School Office" textFill="WHITE">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <Label layoutX="239.0" layoutY="144.0" text="Enjoy" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="1412.0" layoutY="90.0" text="Teachers" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1328.0" layoutY="321.0" prefHeight="590.0" prefWidth="279.0" styleClass="box">
+         <children>
+            <JFXButton alignment="CENTER" layoutX="24.0" layoutY="62.0" onAction="#teacher_add" prefHeight="45.0" prefWidth="231.0" styleClass="b" text="Add">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="24.0" layoutY="164.0" onAction="#goEdit" prefHeight="45.0" prefWidth="231.0" styleClass="b" text="Edit">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="24.0" layoutY="256.0" onAction="#goDelete" prefHeight="45.0" prefWidth="231.0" styleClass="b" text="Delete">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <TableView fx:id="teacher" layoutY="321.0" prefHeight="590.0" prefWidth="1327.0">
+         <columns>
+            <TableColumn fx:id="id" maxWidth="75.0" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="name" maxWidth="224.0" prefWidth="224.0" text="Name" />
+            <TableColumn fx:id="nrc" maxWidth="162.0" minWidth="0.0" prefWidth="162.0" text="NRC" />
+            <TableColumn fx:id="major" maxWidth="178.0" prefWidth="178.0" text="Major" />
+            <TableColumn fx:id="email" maxWidth="178.0" prefWidth="178.0" text="Email" />
+            <TableColumn fx:id="phone" maxWidth="178.0" prefWidth="178.0" text="Phone" />
+            <TableColumn fx:id="address" maxWidth="331.0" prefWidth="331.0" text="Address" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

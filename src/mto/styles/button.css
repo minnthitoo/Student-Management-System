@@ -1,0 +1,15 @@
+.btn {
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+    -fx-border-style: solid;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+.btn:hover {
+    -fx-border-color: #00ff00;
+    -fx-border-radius: 5px;
+    -fx-border-style: solid;
+    -fx-background-color: #4059a9;
+    -fx-text-fill: white;
+}

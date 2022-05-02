@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" stylesheets="@../styles/teacher.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mto.controllers.Timetable_Update_Controller">
+    <children>
+        <Pane layoutY="-4.0" prefHeight="325.0" prefWidth="1607.0" styleClass="box">
+            <children>
+                <JFXButton contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" onAction="#goHome" prefHeight="48.0" prefWidth="46.0" text=" ">
+                    <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="ARROW_CIRCLE_LEFT" size="60" />
+                    </graphic>
+                </JFXButton>
+                <FontAwesomeIconView fill="WHITE" glyphName="FLAG_CHECKERED" layoutX="107.0" layoutY="141.0" size="94px" />
+                <Label layoutX="239.0" layoutY="61.0" text="School Office" textFill="WHITE">
+                    <font>
+                        <Font size="64.0" />
+                    </font>
+                </Label>
+                <Label layoutX="239.0" layoutY="144.0" text="Enjoy" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="1340.0" layoutY="90.0" prefHeight="45.0" prefWidth="215.0" text="Timetables Add" textFill="WHITE">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutX="1328.0" layoutY="321.0" prefHeight="590.0" prefWidth="279.0" styleClass="box">
+            <children>
+                <JFXButton alignment="CENTER" layoutX="24.0" layoutY="62.0" onAction="#update" prefHeight="45.0" prefWidth="231.0" styleClass="b" text="Update">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </Pane>
+        <JFXTextField fx:id="mon_first" layoutX="219.0" layoutY="425.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="mon_second" layoutX="480.0" layoutY="425.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="mon_third" layoutX="752.0" layoutY="425.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="mon_forth" layoutX="1044.0" layoutY="420.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="tue_first" layoutX="219.0" layoutY="524.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="tue_second" layoutX="480.0" layoutY="524.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="tue_third" layoutX="752.0" layoutY="524.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="tue_forth" layoutX="1044.0" layoutY="519.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="wed_first" layoutX="219.0" layoutY="621.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="wed_second" layoutX="480.0" layoutY="621.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="wed_third" layoutX="752.0" layoutY="621.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="wed_forth" layoutX="1044.0" layoutY="616.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="thu_first" layoutX="219.0" layoutY="714.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="thu_second" layoutX="480.0" layoutY="714.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="thu_third" layoutX="752.0" layoutY="714.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="thu_forth" layoutX="1044.0" layoutY="709.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="fri_first" layoutX="219.0" layoutY="808.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="fir_second" layoutX="480.0" layoutY="808.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="fri_third" layoutX="752.0" layoutY="808.0" prefHeight="31.0" prefWidth="198.0" />
+        <JFXTextField fx:id="fri_forth" layoutX="1044.0" layoutY="803.0" prefHeight="31.0" prefWidth="198.0" />
+        <Label layoutX="41.0" layoutY="433.0" text="Monday" textFill="#4059a9">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="41.0" layoutY="532.0" text="Tuesday" textFill="#4059a9">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="41.0" layoutY="629.0" text="Wednesday" textFill="#4059a9">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="42.0" layoutY="727.0" text="Thursday" textFill="#4059a9">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="53.0" layoutY="821.0" text="Friday" textFill="#4059a9">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="301.0" layoutY="370.0" text="1" textFill="#4059a9">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="572.0" layoutY="370.0" text="2" textFill="#4059a9">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="844.0" layoutY="361.0" text="3" textFill="#4059a9">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="1136.0" layoutY="361.0" text="4" textFill="#4059a9">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

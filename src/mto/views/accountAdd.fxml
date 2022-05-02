@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="318.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mto.controllers.AccountAddController">
+   <children>
+      <JFXPasswordField fx:id="pass" labelFloat="true" layoutX="143.0" layoutY="87.0" prefHeight="31.0" prefWidth="234.0" promptText="Enter Password" />
+      <JFXPasswordField fx:id="repass" layoutX="143.0" layoutY="159.0" prefHeight="31.0" prefWidth="234.0" promptText="Confirm Password" />
+      <Label layoutX="186.0" layoutY="33.0" text="Enter Password" textFill="#0f2a3f">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="302.0" layoutY="229.0" onAction="#goCreate" prefHeight="31.0" prefWidth="77.0" style="-fx-background-color: #0f2a3f;" text="Create" textFill="WHITE" />
+   </children>
+</AnchorPane>
